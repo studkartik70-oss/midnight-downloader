@@ -1,9 +1,9 @@
 const CONFIG = {
     // Replace this with your actual backend URL after deploying to Render/Railway
     // If empty, it will default to the current domain (works for local development)
-    BACKEND_URL: window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
+    BACKEND_URL: (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
         ? '' 
-        : 'https://midnight-downloader.onrender.com' 
+        : 'https://midnight-downloader.onrender.com').replace(/\/$/, '') 
 };
 
 const urlInput = document.getElementById('urlInput');

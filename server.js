@@ -58,7 +58,8 @@ app.get('/info', async (req, res) => {
             formats: formats
         });
     } catch (err) {
-        res.status(500).json({ error: 'Failed' });
+        console.error('API Error:', err);
+        res.status(500).json({ error: err.message || 'Extraction failed' });
     }
 });
 
