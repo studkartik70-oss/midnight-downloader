@@ -3,7 +3,7 @@ const CONFIG = {
     // If empty, it will default to the current domain (works for local development)
     BACKEND_URL: window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
         ? '' 
-        : 'https://your-backend-api.onrender.com' 
+        : 'https://midnight-downloader.onrender.com' 
 };
 
 const urlInput = document.getElementById('urlInput');
